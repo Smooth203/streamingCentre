@@ -1,0 +1,36 @@
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#toGames
+{
+	position: absolute;
+	left: 50vw;
+	top: 50vh;
+	transform: translate(-50%,-50%);
+	width: 50vw;
+	height: 25vw;
+
+	border: solid black;
+}
+
+.buttonText
+{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	font-size: 10vw;
+}
+
+#shutdown
+{
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	width: 25vw;
+	height: 25vh;
+	border: solid;
+}
