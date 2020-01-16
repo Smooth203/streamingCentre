@@ -10,11 +10,24 @@
 
 	<body>
 
-		<a href="#GAMES" id="toGames">
-			<p class="buttonText">Games</p>
-		</a>
+		<div id="toGamesBox">
+			<a href="#GAMES">
+				Games
+			</a>
+		</div>
 
-		<div id="shutdown"><p class="buttonText">Shutdown</p></div>
+		<div id="shutdown">
+			<a onclick="test()">
+				Shutdown
+			</a>
+		</div>
+
+		<script type="text/javascript">
+			function test()
+			{
+				console.log(1);
+			}
+		</script>
 
 	<!--
 		<button type="button" onclick="runGame(233450)">Run Prison Architect</button>
