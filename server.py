@@ -14,13 +14,13 @@ def hello_world():
 
 @app.route('/233450')
 
-def steamStream():
+def runPA():
 	#os.system('"C:\Program Files (x86)\Steam\Steam.exe" steam://rungameid/233450')
 	return "Running Prison Architect"
 
 @app.route('/251570')
 
-def steamStream():
+def run7dtd():
 	#os.system('"C:\Program Files (x86)\Steam\Steam.exe" steam://rungameid/251570')
 	return "Running 7 Days to Die"
 

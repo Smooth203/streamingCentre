@@ -48,7 +48,7 @@
 				{
 					if(xmlHttp.readyState == 4 && xmlHttp.status == 200)
 					{
-						document.getElementById("PENIS").innerHTML = xmlHttp.responseText;
+						document.getElementById("status").innerHTML = xmlHttp.responseText;
 					}
 				}
 				xmlHttp.open("GET", url, true);
