@@ -10,10 +10,13 @@
 
 	<body>
 
-		
-			<a href="#GAMES" id="toGamesBox">
-				<div id="toGamesText">Games</div>
-			</a>
+		<!--Global-->
+		<p id="status">Waiting</p>
+
+		<!--Home Page-->
+		<a href="#GAMES" id="toGamesBox" class="buttonBox">
+			<div class="buttonText">Games</div>
+		</a>
 
 		<div id="shutdown">
 			<a onclick="test()">
@@ -21,19 +24,38 @@
 			</a>
 		</div>
 
-		<script type="text/javascript">
-			function test()
-			{
-				console.log(1);
-			}
-		</script>
-
-
-
 		<!--#GAMES-->
 		<div id="GAMES">
-			<p>Games</p>
+			
+			<div id="pa" class="buttonBox" onclick="runGame(233450)"><div class="buttonText">Prison<br>Architect</div></div>
+			<div id="sevendtd" class="buttonBox" onclick="runGame(251570)"><div class="buttonText">7 Days<br>to Die</div></div>
+
 		</div>
+
+		<!--SCRIPTS-->
+		<script type="text/javascript">
+
+			function runGame(gameId)
+			{
+				SEND(gameId);
+			}
+
+			function SEND(route)
+			{
+				url = "http://localhost:5000/" + route;
+				var xmlHttp = new XMLHttpRequest();
+				xmlHttp.onreadystatechange = function()
+				{
+					if(xmlHttp.readyState == 4 && xmlHttp.status == 200)
+					{
+						document.getElementById("PENIS").innerHTML = xmlHttp.responseText;
+					}
+				}
+				xmlHttp.open("GET", url, true);
+				xmlHttp.send();
+			}
+
+		</script>
 
 	<!--
 		<button type="button" onclick="runGame(233450)">Run Prison Architect</button>

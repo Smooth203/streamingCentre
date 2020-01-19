@@ -22,6 +22,30 @@ p
 	font-size: 1vw;
 }
 
+#status
+{
+	position: fixed;
+	top: 0vh;
+	left: 50vw;
+	transform: translate(-50%, 0%);
+}
+
+.buttonBox
+{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	background-color: #0091C1;
+}
+
+.buttonText
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(5);
+	text-align: center;
+}
+
 #shutdown
 {
 	cursor: pointer;
@@ -36,27 +60,11 @@ p
 
 #toGamesBox
 {
-	position: absolute;
 	left: 50vw;
 	top: 50vh;
-	transform: translate(-50%,-50%);
 	width: 25vw;
 	height: 25vw;
-
-	background-color: #0091C1;
-
-	border: ;
 }
-
-#toGamesText
-{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(5);
-}
-
-
 
 #GAMES
 {
@@ -64,4 +72,20 @@ p
 	top: 100vh;
 	left: 0vw;
 	height: 100vh;
+}
+
+#pa
+{
+	top: 50vh;
+	left: 25vw;
+	width: 25vw;
+	height: 25vw;
+}
+
+#sevendtd
+{
+	top: 50vh;
+	left: 75vw;
+	width: 25vw;
+	height: 25vw;
 }

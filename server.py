@@ -12,11 +12,17 @@ CORS(app)
 def hello_world():
 	return "Hello World"
 
-@app.route('/game')
+@app.route('/233450')
 
 def steamStream():
-	os.system('"C:\Program Files (x86)\Steam\Steam.exe" steam://rungameid/233450')
-	return "Steam Game"
+	#os.system('"C:\Program Files (x86)\Steam\Steam.exe" steam://rungameid/233450')
+	return "Running Prison Architect"
+
+@app.route('/251570')
+
+def steamStream():
+	#os.system('"C:\Program Files (x86)\Steam\Steam.exe" steam://rungameid/251570')
+	return "Running 7 Days to Die"
 
 
 if __name__ == "__main__":
